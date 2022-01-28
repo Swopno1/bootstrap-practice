@@ -1,11 +1,2 @@
-.dark-color-scheme{
-  background-color: #28293E;
-  color: white;
-}
-.light-color-scheme{
-  background-color: #FDF0E9;
-  color: #391400;
-}
-.fill-color{
-  background-color: #EF6D58;
-}
+/* import google front */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
