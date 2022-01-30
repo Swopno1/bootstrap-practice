@@ -33,6 +33,10 @@
         },
       };
     </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+      }
+    </style>
   </head>
   <body>
     <header class="w-full bg-primary-dark">
@@ -59,23 +63,31 @@
             <a href="#" class="font-medium text-secondary-light-dark hover:text-light-gray">Blog</a>
           </div>
           <div class="hidden md:block">
-            <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-6 py-1 border border-light-gray text-base font-medium rounded-md text-secondary-light-dark bg-transparent hover:bg-light-gray hover:text-primary-light-dark md:text-lg">CONTACT</a>
+            <div class="relative my-4">
+              <a
+          href="#"
+          class="px-14 py-4 border shadow-lg border-light-gray text-base font-medium rounded-md text-secondary-light-dark bg-transparent hover:bg-secondary-light-dark hover:text-primary-light-dark"
+          >CONTACT</a
+        >
             </div>
           </div>
         </nav>
       </div>
-      <div class="main-banner relative md:flex md:items-center max-w-7xl mx-auto px-6 py-6">
+      <div class="main-banner relative md:flex md:items-center md:justify-between max-w-7xl mx-auto px-6 py-6">
         <div class="main-banner-image py-3 md:order-2">
           <img src="images/banner-image.png" alt="main banner image">
         </div>
         <div class="main-banner-content py-3 md:order-1">
           <h1 class="text-secondary-dark font-light py-3">MD AMIR HOSSAIN</h1>
-          <h2 class="text-5xl font-bold text-secondary-light-dark py-3">The Simple Clean Design</h2>
-          <p class="text-secondary-light-dark py-3 text-s font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui, repellat harum ea natus ad?</p>
-          <div class="rounded shadow w-fit pt-3">
-            <a href="#" class="flex items-center justify-center px-3 py-1 border-transparent text-base rounded-md bg-secondary-dark text-secondary-light-dark hover:bg-light-gray hover:text-primary-light-dark">SEE MY WORK</a>
-          </div>
+          <h2 class="text-5xl font-bold text-secondary-light-dark py-3">The Simple, <br> Clean Design</h2>
+          <p class="text-secondary-light-dark py-3 text-s font-thin md:w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui, repellat harum ea natus ad?</p>
+          <div class="relative mt-8">
+              <a
+                href="#"
+                class="px-14 py-4 border shadow-lg border-secondary-dark text-base font-medium rounded-md text-secondary-light-dark bg-secondary-dark hover:bg-secondary-light-dark hover:border-secondary-light-dark hover:text-primary-light-dark"
+                >SEE MY WORK</a
+              >
+            </div>
         </div>
       </div>
     </header>
@@ -84,24 +96,46 @@
         <div>
           <h1 class="text-secondary-dark text-xs mx-auto text-center tracking-widest py-3">SERVICE</h1>
           <h2 class="text-primary-light-dark text-3xl md:text-4xl font-extrabold text-center">How I Can Help <br> You With</h2>
-          <div class="flex flex-col md:flex-row w-full">
-            <div class="section-content border border-secondary-dark-gray p-6">
+          <div class="flex flex-col md:flex-row py-8 md:py-16">
+            <div class="section-content border border-secondary-dark-gray p-6 rounded-t-md md:rounded-t-none md:rounded-l-md">
               <div class="flex items-center py-3">
-                <div class="rounded-full bg-secondary-dark w-14 h-14 flex items-center justify-center text-secondary-light-dark text-2xl"><i class="fas fa-spray-can"></i></div>
-                <h3 class="text-primary-light-dark font-bold text-lg pl-6">Design</h3>
+                <div
+                  class="rounded-full shadow-lg bg-secondary-dark w-14 h-14 flex items-center justify-center"
+                >
+                <i class="fas fa-spray-can text-secondary-light-dark text-xl"></i>
+                </div>
+                <h3 class="text-primary-light-dark font-bold text-lg pl-4">Design</h3>
               </div>
               <p class="text-primary-light-dark text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit perspiciatis eius obcaecati nam earum!</p>
-              <div class="flex items-center">
-                <a href=""><p class="rounded-full text-secondary-dark flex justify-center items-center bg-white w-9 h-9">+</p><span class="text-primary-light-dark">Learn More</span></a>
+              <div class="">
+                <a class="flex items-center pt-4 md:pt-8" href=""><p class="rounded-full text-secondary-dark flex justify-center items-center bg-white w-9 h-9">+</p><span class="text-primary-light-dark text-xs pl-3">Learn More</span></a>
+              </div>
+            </div>
+            
+            <div class="section-content border border-t-0 md:border-t md:border-l-0 border-secondary-dark-gray p-6 rounded-b-md md:rounded-b-none md:rounded-r-md">
+              <div class="flex items-center py-3">
+                <div
+                  class="rounded-full shadow-lg bg-secondary-dark w-14 h-14 flex items-center justify-center"
+                >
+                <i class="fas fa-spray-can text-secondary-light-dark text-xl"></i>
+                </div>
+                <h3 class="text-primary-light-dark font-bold text-lg pl-4">Design</h3>
+              </div>
+              <p class="text-primary-light-dark text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit perspiciatis eius obcaecati nam earum!</p>
+              <div class="">
+                <a class="flex items-center pt-4 md:pt-8" href=""><p class="rounded-full text-secondary-dark flex justify-center items-center bg-white w-9 h-9">+</p><span class="text-primary-light-dark text-xs pl-3">Learn More</span></a>
               </div>
             </div>
           </div>
+          <p class="text-primary-light-dark text-xs font-thin text-center">Want more service? <a class="font-semibold" href="">Explore Now</a></p>
         </div>
       </section>
       <p class="xx bg-secondary-dark">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo
         autem ullam tenetur cupiditate debitis consequatur ab ea quisquam esse?
       </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo recusandae iure porro assumenda quidem officiis sint, pariatur sapiente quibusdam a commodi ab. Itaque quaerat iusto ipsam doloribus explicabo. Neque, libero.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, consequuntur! Sunt, repellat recusandae? Eos soluta voluptate quasi sint hic. Quos dolorum facere magni ducimus, possimus reiciendis odit reprehenderit atque consectetur.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, consequuntur! Sunt, repellat recusandae? Eos soluta voluptate quasi sint hic. Quos dolorum facere magni ducimus, possimus reiciendis odit reprehenderit atque consectetur.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, consequuntur! Sunt, repellat recusandae? Eos soluta voluptate quasi sint hic. Quos dolorum facere magni ducimus, possimus reiciendis odit reprehenderit atque consectetur.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, consequuntur! Sunt, repellat recusandae? Eos soluta voluptate quasi sint hic. Quos dolorum facere magni ducimus, possimus reiciendis odit reprehenderit atque consectetur.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, consequuntur! Sunt, repellat recusandae? Eos soluta voluptate quasi sint hic. Quos dolorum facere magni ducimus, possimus reiciendis odit reprehenderit atque consectetur.</p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ratione dolore obcaecati ipsa laboriosam mollitia dolor quisquam quis natus! Laboriosam, veniam minima totam non deserunt blanditiis fugiat eveniet natus! Sapiente.
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam iste consectetur vitae, ipsam mollitia, facere, omnis error alias officiis molestias quos nesciunt quam accusamus reiciendis fuga commodi harum voluptatum id.
     </main>

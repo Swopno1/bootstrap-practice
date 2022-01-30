@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CSS CND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome kit link -->
+    <script
+      src="https://kit.fontawesome.com/c787333244.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                dark: "#28293E",
+                "light-dark": "#391400",
+                "dark-gray": "rgba(57, 20, 0, 0.64)",
+              },
+              secondary: {
+                dark: "#EF6D58",
+                "light-dark": "#FDF0E9",
+                "dark-gray": "#F3D1BF",
+              },
+              light: "#FFFFFF",
+              "light-gray": "rgba(255, 255, 255, 0.64)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-primary-dark">
+    <!-- Primary Button -->
+    <div class="container mx-auto py-12">
+      <h1 class="text-2xl text-secondary-dark pb-6">Primary Button</h1>
+      <div class="relative my-4">
+        <a
+          href="#"
+          class="px-14 py-4 border shadow-lg border-secondary-dark text-base font-medium rounded-md text-secondary-light-dark bg-secondary-dark hover:bg-secondary-light-dark hover:border-secondary-light-dark hover:text-primary-light-dark"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- Secondary Button -->
+    <div class="container mx-auto py-12">
+      <h1 class="text-2xl text-secondary-dark pb-6">Secondary Button</h1>
+      <div class="relative my-4">
+        <a
+          href="#"
+          class="px-14 py-4 border shadow-lg border-light-gray text-base font-medium rounded-md text-secondary-light-dark bg-transparent hover:bg-secondary-light-dark hover:text-primary-light-dark"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- Primary Icon Container -->
+    <div class="container mx-auto py-12">
+      <h1 class="text-2xl text-secondary-dark pb-6">Primary Icon</h1>
+      <div
+        class="rounded-full shadow-lg bg-secondary-dark w-14 h-14 flex items-center justify-center"
+      >
+        <!-- Icon goes here -->
+      </div>
+    </div>
+
+    <!-- Secondary Icon Container -->
+    <div class="container mx-auto py-12">
+      <h1 class="text-2xl text-secondary-dark pb-6">Secondary Icon</h1>
+      <div
+        class="rounded-full shadow-lg bg-transparent w-12 h-12 flex items-center justify-center"
+      >
+        <!-- Icon goes here -->
+      </div>
+    </div>
+
+    <!-- Form Items -->
+    <form>
+      <!-- Only Label -->
+
+      <!-- Input-text -->
+      <div class="container mx-auto py-12 bg-secondary-light-dark">
+        <h1 class="text-2xl text-secondary-dark pb-6">
+          Input Text/Password/Email
+        </h1>
+        <div class="relative my-4">
+          <label class="block capitalize" for="">Label</label>
+          <input
+            class="py-2 px-4 rounded-md placeholder:text-primary-dark-gray text-primary-light-dark border-2 border-secondary-dark-gray shadow-md bg-transparent"
+            type="text"
+            name=""
+            id=""
+            placeholder="Placeholder"
+          />
+        </div>
+      </div>
+
+      <!-- Input-Dropdown -->
+      <div class="container mx-auto py-12 bg-secondary-light-dark">
+        <h1 class="text-2xl text-secondary-dark pb-6">
+          Input Text/Password/Email
+        </h1>
+        <div class="col-span-6 sm:col-span-3">
+          <label for="" class="block text-sm">Label</label>
+          <select
+            id=""
+            name=""
+            autocomplete=""
+            class="py-2 px-4 rounded-md placeholder:text-primary-dark-gray text-primary-light-dark border-2 border-secondary-dark-gray shadow-md bg-transparent"
+          >
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Mexico</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <!-- ################################## -->
+    <div class="container mx-auto py-12">
+      <h1 class="text-2xl text-secondary-dark pb-6">
+        ####################################
+      </h1>
+      <div class="relative my-4">
+        <a
+          href="#"
+          class="px-14 py-4 border shadow-md border-light-gray text-base font-medium rounded-md text-secondary-light-dark bg-transparent hover:bg-secondary-light-dark hover:text-primary-light-dark"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+    <!-- Secondary Button -->
+    <div class="container mx-auto py-12">
+      <h1 class="text-2xl text-secondary-dark pb-6">Secondary Button</h1>
+      <div class="relative my-4">
+        <a
+          href="#"
+          class="px-14 py-4 border shadow-md border-light-gray text-base font-medium rounded-md text-secondary-light-dark bg-transparent hover:bg-secondary-light-dark hover:text-primary-light-dark"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
