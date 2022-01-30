@@ -9,7 +9,8 @@ module.exports = {
         },
         secondary: {
           dark: "#EF6D58",
-          light: "#FDF0E9",
+          "light-dark": "#FDF0E9",
+          "dark-gray": "#F3D1BF",
         },
         light: "#FFFFFF",
         "light-gray": "rgba(255, 255, 255, 0.64)",

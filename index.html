@@ -7,6 +7,8 @@
     <title>Shohoje - Make it easy...</title>
     <!-- Tailwind CSS CND -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome kit link -->
+    <script src="https://kit.fontawesome.com/c787333244.js" crossorigin="anonymous"></script>
     <!-- Custom CSS Link -->
     <link rel="stylesheet" href="styles/main.css" />
     <script>
@@ -21,7 +23,8 @@
               },
               secondary: {
                 dark: "#EF6D58",
-                light: "#FDF0E9",
+                "light-dark": "#FDF0E9",
+                "dark-gray": "#F3D1BF",
               },
               light: "#FFFFFF",
               "light-gray": "rgba(255, 255, 255, 0.64)",
@@ -38,10 +41,10 @@
           <div class="flex items-center justify-between w-full md:w-auto">
             <a class="flex items-center justify-between" href="#">
               <img src="images/logo.svg" alt="logo of Shohoje"></img>
-              <span class="text-secondary-light font-bold pl-3 text-4xl">Shohoje</span>
+              <span class="text-secondary-light-dark font-bold pl-3 text-4xl">Shohoje</span>
             </a>
             <div class="flex items-center md:hidden">
-              <button type="button" class="bg-transparent border border-light-gray rounded-md p-2 inline-flex text-secondary-light">
+              <button type="button" class="bg-transparent border border-light-gray rounded-md p-2 inline-flex text-secondary-light-dark">
                 <span class="sr-only">Open main menu</span>
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -50,14 +53,14 @@
             </div>
           </div>
           <div class="hidden md:block justify-between md:space-x-24">
-            <a href="#" class="font-medium text-secondary-light hover:text-light-gray">About</a>
-            <a href="#" class="font-medium text-secondary-light hover:text-light-gray">Services</a>
-            <a href="#" class="font-medium text-secondary-light hover:text-light-gray">Pricing</a>
-            <a href="#" class="font-medium text-secondary-light hover:text-light-gray">Blog</a>
+            <a href="#" class="font-medium text-secondary-light-dark hover:text-light-gray">About</a>
+            <a href="#service" class="font-medium text-secondary-light-dark hover:text-light-gray">Services</a>
+            <a href="#" class="font-medium text-secondary-light-dark hover:text-light-gray">Pricing</a>
+            <a href="#" class="font-medium text-secondary-light-dark hover:text-light-gray">Blog</a>
           </div>
           <div class="hidden md:block">
             <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-6 py-1 border border-light-gray text-base font-medium rounded-md text-secondary-light bg-transparent hover:bg-light-gray hover:text-primary-light-dark md:text-lg">CONTACT</a>
+              <a href="#" class="w-full flex items-center justify-center px-6 py-1 border border-light-gray text-base font-medium rounded-md text-secondary-light-dark bg-transparent hover:bg-light-gray hover:text-primary-light-dark md:text-lg">CONTACT</a>
             </div>
           </div>
         </nav>
@@ -67,16 +70,34 @@
           <img src="images/banner-image.png" alt="main banner image">
         </div>
         <div class="main-banner-content py-3 md:order-1">
-          <h3 class="text-secondary-dark font-light py-3">MD AMIR HOSSAIN</h3>
-          <h1 class="text-5xl font-bold text-secondary-light py-3">The Simple Clean Design</h1>
-          <h4 class="text-secondary-light py-3 text-s font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui, repellat harum ea natus ad?</h4>
-          <div class="rounded shadow w-fit py-3">
-            <a href="#" class="flex items-center justify-center px-3 py-1 border-transparent text-base rounded-lg bg-secondary-dark text-secondary-light hover:bg-light-gray hover:text-primary-light-dark">SEE MY WORK</a>
+          <h1 class="text-secondary-dark font-light py-3">MD AMIR HOSSAIN</h1>
+          <h2 class="text-5xl font-bold text-secondary-light-dark py-3">The Simple Clean Design</h2>
+          <p class="text-secondary-light-dark py-3 text-s font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui, repellat harum ea natus ad?</p>
+          <div class="rounded shadow w-fit pt-3">
+            <a href="#" class="flex items-center justify-center px-3 py-1 border-transparent text-base rounded-md bg-secondary-dark text-secondary-light-dark hover:bg-light-gray hover:text-primary-light-dark">SEE MY WORK</a>
           </div>
         </div>
       </div>
     </header>
     <main>
+      <section id="service" class="max-w-7xl mx-auto bg-secondary-light-dark px-6 py-16">
+        <div>
+          <h1 class="text-secondary-dark text-xs mx-auto text-center tracking-widest py-3">SERVICE</h1>
+          <h2 class="text-primary-light-dark text-3xl md:text-4xl font-extrabold text-center">How I Can Help <br> You With</h2>
+          <div class="flex flex-col md:flex-row w-full">
+            <div class="section-content border border-secondary-dark-gray p-6">
+              <div class="flex items-center py-3">
+                <div class="rounded-full bg-secondary-dark w-14 h-14 flex items-center justify-center text-secondary-light-dark text-2xl"><i class="fas fa-spray-can"></i></div>
+                <h3 class="text-primary-light-dark font-bold text-lg pl-6">Design</h3>
+              </div>
+              <p class="text-primary-light-dark text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit perspiciatis eius obcaecati nam earum!</p>
+              <div class="flex items-center">
+                <a href=""><p class="rounded-full text-secondary-dark flex justify-center items-center bg-white w-9 h-9">+</p><span class="text-primary-light-dark">Learn More</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <p class="xx bg-secondary-dark">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo
         autem ullam tenetur cupiditate debitis consequatur ab ea quisquam esse?
